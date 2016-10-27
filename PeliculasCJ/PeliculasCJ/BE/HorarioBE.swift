@@ -9,5 +9,11 @@
 import UIKit
 
 class HorarioBE: NSObject {
+    
+    
+    var horario_horario: String?
+    var horario_idPelicula: String?
+    var horario_idSucursal: String?
+   
 
 }

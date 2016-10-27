@@ -8,11 +8,46 @@
 
 import UIKit
 
-class PeliculasViewController: UIViewController {
+class PeliculasViewController: UIViewController , UITableViewDelegate, UITableViewDataSource {
+    
+    
+    @IBOutlet weak var TbPeliculas: UITableView!
+    
+    
+    
+      var arrayPeliculas = NSMutableArray()
+    
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return self.arrayPeliculas.count
+    }
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cellIdentifier = "PeliculasTableViewCell"
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! PeliculasTableViewCell
+        cell.objPelicula = self.arrayPeliculas[indexPath.row] as? Pelicula
+        cell.actualizarData()
+        
+        return cell
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        
+        
+        
         // Do any additional setup after loading the view.
     }
 

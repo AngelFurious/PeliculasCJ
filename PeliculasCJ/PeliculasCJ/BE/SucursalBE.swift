@@ -9,5 +9,8 @@
 import UIKit
 
 class SucursalBE: NSObject {
+    
+    var sucursal_id: String?
+    var sucursal_nombre: String?
 
 }
