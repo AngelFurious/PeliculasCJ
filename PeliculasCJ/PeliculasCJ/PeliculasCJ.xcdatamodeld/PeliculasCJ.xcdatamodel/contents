@@ -1,4 +1,34 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="15G31" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Cadena" syncable="YES">
+        <attribute name="cadena_descripcion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cadena_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cadena_nombre" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cadena_urlImagen" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="horarios" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Sucursal" inverseName="horarios" inverseEntity="Sucursal" syncable="YES"/>
+    </entity>
+    <entity name="Horario" syncable="YES">
+        <attribute name="horario_horario" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="pelicula" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Pelicula" inverseName="horarios" inverseEntity="Pelicula" syncable="YES"/>
+        <relationship name="sucursal" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Sucursal" syncable="YES"/>
+    </entity>
+    <entity name="Pelicula" syncable="YES">
+        <attribute name="pelicula_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pelicula_nombre" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pelicula_resumen" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="horarios" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Horario" inverseName="pelicula" inverseEntity="Horario" syncable="YES"/>
+    </entity>
+    <entity name="Sucursal" syncable="YES">
+        <attribute name="sucursal_direccion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sucursal_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sucursal_nombre" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="cadena" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Horario" syncable="YES"/>
+        <relationship name="horarios" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Cadena" inverseName="horarios" inverseEntity="Cadena" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Horario" positionX="-504" positionY="-153" width="128" height="88"/>
+        <element name="Sucursal" positionX="-263" positionY="-64" width="128" height="118"/>
+        <element name="Cadena" positionX="-540" positionY="152" width="128" height="118"/>
+        <element name="Pelicula" positionX="-740" positionY="-177" width="128" height="103"/>
+    </elements>
 </model>
