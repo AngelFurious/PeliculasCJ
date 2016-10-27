@@ -18,8 +18,6 @@
 		83922DDD1DC231FE001026BA /* MainPeliculas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83922DDC1DC231FE001026BA /* MainPeliculas.storyboard */; };
 		83922DDF1DC2337E001026BA /* PeliculasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83922DDE1DC2337E001026BA /* PeliculasViewController.swift */; };
 		83922DE11DC233D6001026BA /* PeliculasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83922DE01DC233D6001026BA /* PeliculasTableViewCell.swift */; };
-		83922DE31DC2340D001026BA /* PeliculaBE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83922DE21DC2340D001026BA /* PeliculaBE.swift */; };
-		83922DE51DC2357C001026BA /* SucursalBE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83922DE41DC2357C001026BA /* SucursalBE.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,8 +34,6 @@
 		83922DDC1DC231FE001026BA /* MainPeliculas.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainPeliculas.storyboard; sourceTree = "<group>"; };
 		83922DDE1DC2337E001026BA /* PeliculasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeliculasViewController.swift; sourceTree = "<group>"; };
 		83922DE01DC233D6001026BA /* PeliculasTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeliculasTableViewCell.swift; sourceTree = "<group>"; };
-		83922DE21DC2340D001026BA /* PeliculaBE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeliculaBE.swift; sourceTree = "<group>"; };
-		83922DE41DC2357C001026BA /* SucursalBE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SucursalBE.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,8 +159,6 @@
 			isa = PBXGroup;
 			children = (
 				83922DD91DC22FEE001026BA /* DM */,
-				83922DE21DC2340D001026BA /* PeliculaBE.swift */,
-				83922DE41DC2357C001026BA /* SucursalBE.swift */,
 			);
 			path = BE;
 			sourceTree = "<group>";
@@ -250,9 +244,7 @@
 			files = (
 				838A8E701DC23A550064A1CA /* HorariosDALC.swift in Sources */,
 				83922DAB1DC22AA7001026BA /* PeliculasCJ.xcdatamodeld in Sources */,
-				83922DE31DC2340D001026BA /* PeliculaBE.swift in Sources */,
 				838A8E721DC23AC30064A1CA /* PeliculasDALC.swift in Sources */,
-				83922DE51DC2357C001026BA /* SucursalBE.swift in Sources */,
 				838A8E741DC23B220064A1CA /* SucursalDALC.swift in Sources */,
 				83922DDF1DC2337E001026BA /* PeliculasViewController.swift in Sources */,
 				83922DA31DC22AA7001026BA /* AppDelegate.swift in Sources */,
