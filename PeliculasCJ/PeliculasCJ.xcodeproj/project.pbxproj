@@ -18,6 +18,9 @@
 		83922DDD1DC231FE001026BA /* MainPeliculas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83922DDC1DC231FE001026BA /* MainPeliculas.storyboard */; };
 		83922DDF1DC2337E001026BA /* PeliculasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83922DDE1DC2337E001026BA /* PeliculasViewController.swift */; };
 		83922DE11DC233D6001026BA /* PeliculasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83922DE01DC233D6001026BA /* PeliculasTableViewCell.swift */; };
+		83FF11F71DC23F0F008757B8 /* HorarioBE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FF11F61DC23F0F008757B8 /* HorarioBE.swift */; };
+		83FF11F91DC23F1C008757B8 /* PeliculaBE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FF11F81DC23F1C008757B8 /* PeliculaBE.swift */; };
+		83FF11FB1DC23F39008757B8 /* SucursalBE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FF11FA1DC23F39008757B8 /* SucursalBE.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		83922DDC1DC231FE001026BA /* MainPeliculas.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainPeliculas.storyboard; sourceTree = "<group>"; };
 		83922DDE1DC2337E001026BA /* PeliculasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeliculasViewController.swift; sourceTree = "<group>"; };
 		83922DE01DC233D6001026BA /* PeliculasTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeliculasTableViewCell.swift; sourceTree = "<group>"; };
+		83FF11F61DC23F0F008757B8 /* HorarioBE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorarioBE.swift; sourceTree = "<group>"; };
+		83FF11F81DC23F1C008757B8 /* PeliculaBE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeliculaBE.swift; sourceTree = "<group>"; };
+		83FF11FA1DC23F39008757B8 /* SucursalBE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SucursalBE.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +165,9 @@
 			isa = PBXGroup;
 			children = (
 				83FF11F51DC23E33008757B8 /* DM */,
+				83FF11F61DC23F0F008757B8 /* HorarioBE.swift */,
+				83FF11F81DC23F1C008757B8 /* PeliculaBE.swift */,
+				83FF11FA1DC23F39008757B8 /* SucursalBE.swift */,
 			);
 			path = BE;
 			sourceTree = "<group>";
@@ -243,12 +252,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				838A8E701DC23A550064A1CA /* HorariosDALC.swift in Sources */,
+				83FF11F91DC23F1C008757B8 /* PeliculaBE.swift in Sources */,
 				83922DAB1DC22AA7001026BA /* PeliculasCJ.xcdatamodeld in Sources */,
+				83FF11F71DC23F0F008757B8 /* HorarioBE.swift in Sources */,
 				838A8E721DC23AC30064A1CA /* PeliculasDALC.swift in Sources */,
 				838A8E741DC23B220064A1CA /* SucursalDALC.swift in Sources */,
 				83922DDF1DC2337E001026BA /* PeliculasViewController.swift in Sources */,
 				83922DA31DC22AA7001026BA /* AppDelegate.swift in Sources */,
 				83922DE11DC233D6001026BA /* PeliculasTableViewCell.swift in Sources */,
+				83FF11FB1DC23F39008757B8 /* SucursalBE.swift in Sources */,
 				838A8E6D1DC23A240064A1CA /* SincronizarBC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
