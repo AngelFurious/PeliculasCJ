@@ -12,6 +12,11 @@
 		83922DAD1DC22AA7001026BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83922DAC1DC22AA7001026BA /* Assets.xcassets */; };
 		83922DB01DC22AA7001026BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83922DAE1DC22AA7001026BA /* LaunchScreen.storyboard */; };
 		83922DDB1DC23057001026BA /* Sincronizar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83922DDA1DC23057001026BA /* Sincronizar.swift */; };
+		83922DDD1DC231FE001026BA /* MainPeliculas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83922DDC1DC231FE001026BA /* MainPeliculas.storyboard */; };
+		83922DDF1DC2337E001026BA /* PeliculasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83922DDE1DC2337E001026BA /* PeliculasViewController.swift */; };
+		83922DE11DC233D6001026BA /* PeliculasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83922DE01DC233D6001026BA /* PeliculasTableViewCell.swift */; };
+		83922DE31DC2340D001026BA /* PeliculaBE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83922DE21DC2340D001026BA /* PeliculaBE.swift */; };
+		83922DE51DC2357C001026BA /* SucursalBE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83922DE41DC2357C001026BA /* SucursalBE.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		83922DAF1DC22AA7001026BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83922DB11DC22AA7001026BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83922DDA1DC23057001026BA /* Sincronizar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sincronizar.swift; path = ../../../../../../Documents/Sincronizar.swift; sourceTree = "<group>"; };
+		83922DDC1DC231FE001026BA /* MainPeliculas.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainPeliculas.storyboard; sourceTree = "<group>"; };
+		83922DDE1DC2337E001026BA /* PeliculasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeliculasViewController.swift; sourceTree = "<group>"; };
+		83922DE01DC233D6001026BA /* PeliculasTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeliculasTableViewCell.swift; sourceTree = "<group>"; };
+		83922DE21DC2340D001026BA /* PeliculaBE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeliculaBE.swift; sourceTree = "<group>"; };
+		83922DE41DC2357C001026BA /* SucursalBE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SucursalBE.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				83922DD41DC22FEE001026BA /* Peliculas */,
+				83922DDE1DC2337E001026BA /* PeliculasViewController.swift */,
+				83922DE01DC233D6001026BA /* PeliculasTableViewCell.swift */,
 			);
 			path = Clases;
 			sourceTree = "<group>";
@@ -126,6 +138,7 @@
 		83922DD61DC22FEE001026BA /* Vistas */ = {
 			isa = PBXGroup;
 			children = (
+				83922DDC1DC231FE001026BA /* MainPeliculas.storyboard */,
 			);
 			path = Vistas;
 			sourceTree = "<group>";
@@ -141,6 +154,8 @@
 			isa = PBXGroup;
 			children = (
 				83922DD91DC22FEE001026BA /* DM */,
+				83922DE21DC2340D001026BA /* PeliculaBE.swift */,
+				83922DE41DC2357C001026BA /* SucursalBE.swift */,
 			);
 			path = BE;
 			sourceTree = "<group>";
@@ -212,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83922DB01DC22AA7001026BA /* LaunchScreen.storyboard in Resources */,
+				83922DDD1DC231FE001026BA /* MainPeliculas.storyboard in Resources */,
 				83922DAD1DC22AA7001026BA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,8 +240,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				83922DAB1DC22AA7001026BA /* PeliculasCJ.xcdatamodeld in Sources */,
+				83922DE31DC2340D001026BA /* PeliculaBE.swift in Sources */,
+				83922DE51DC2357C001026BA /* SucursalBE.swift in Sources */,
+				83922DDF1DC2337E001026BA /* PeliculasViewController.swift in Sources */,
 				83922DA31DC22AA7001026BA /* AppDelegate.swift in Sources */,
 				83922DDB1DC23057001026BA /* Sincronizar.swift in Sources */,
+				83922DE11DC233D6001026BA /* PeliculasTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
