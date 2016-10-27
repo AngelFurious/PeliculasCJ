@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		838A8E6D1DC23A240064A1CA /* SincronizarBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838A8E6C1DC23A240064A1CA /* SincronizarBC.swift */; };
+		838A8E701DC23A550064A1CA /* HorariosDALC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838A8E6F1DC23A550064A1CA /* HorariosDALC.swift */; };
 		83922DA31DC22AA7001026BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83922DA21DC22AA7001026BA /* AppDelegate.swift */; };
 		83922DAB1DC22AA7001026BA /* PeliculasCJ.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 83922DA91DC22AA7001026BA /* PeliculasCJ.xcdatamodeld */; };
 		83922DAD1DC22AA7001026BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83922DAC1DC22AA7001026BA /* Assets.xcassets */; };
 		83922DB01DC22AA7001026BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83922DAE1DC22AA7001026BA /* LaunchScreen.storyboard */; };
-		83922DDB1DC23057001026BA /* Sincronizar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83922DDA1DC23057001026BA /* Sincronizar.swift */; };
 		83922DDD1DC231FE001026BA /* MainPeliculas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83922DDC1DC231FE001026BA /* MainPeliculas.storyboard */; };
 		83922DDF1DC2337E001026BA /* PeliculasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83922DDE1DC2337E001026BA /* PeliculasViewController.swift */; };
 		83922DE11DC233D6001026BA /* PeliculasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83922DE01DC233D6001026BA /* PeliculasTableViewCell.swift */; };
@@ -20,13 +21,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		838A8E6C1DC23A240064A1CA /* SincronizarBC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SincronizarBC.swift; sourceTree = "<group>"; };
+		838A8E6F1DC23A550064A1CA /* HorariosDALC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorariosDALC.swift; sourceTree = "<group>"; };
 		83922D9F1DC22AA7001026BA /* PeliculasCJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeliculasCJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83922DA21DC22AA7001026BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83922DAA1DC22AA7001026BA /* PeliculasCJ.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PeliculasCJ.xcdatamodel; sourceTree = "<group>"; };
 		83922DAC1DC22AA7001026BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83922DAF1DC22AA7001026BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83922DB11DC22AA7001026BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		83922DDA1DC23057001026BA /* Sincronizar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sincronizar.swift; path = ../../../../../../Documents/Sincronizar.swift; sourceTree = "<group>"; };
 		83922DDC1DC231FE001026BA /* MainPeliculas.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainPeliculas.storyboard; sourceTree = "<group>"; };
 		83922DDE1DC2337E001026BA /* PeliculasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeliculasViewController.swift; sourceTree = "<group>"; };
 		83922DE01DC233D6001026BA /* PeliculasTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeliculasTableViewCell.swift; sourceTree = "<group>"; };
@@ -45,6 +47,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		838A8E6B1DC23A0B0064A1CA /* Sincro */ = {
+			isa = PBXGroup;
+			children = (
+				838A8E6C1DC23A240064A1CA /* SincronizarBC.swift */,
+			);
+			path = Sincro;
+			sourceTree = "<group>";
+		};
+		838A8E6E1DC23A460064A1CA /* DALC */ = {
+			isa = PBXGroup;
+			children = (
+				838A8E6F1DC23A550064A1CA /* HorariosDALC.swift */,
+			);
+			path = DALC;
+			sourceTree = "<group>";
+		};
 		83922D961DC22AA7001026BA = {
 			isa = PBXGroup;
 			children = (
@@ -67,7 +85,7 @@
 				83922DCF1DC22FEE001026BA /* Clases Generales */,
 				83922DD11DC22FEE001026BA /* WS */,
 				83922DD21DC22FEE001026BA /* IPhone */,
-				83922DD71DC22FEE001026BA /* DALC */,
+				838A8E6E1DC23A460064A1CA /* DALC */,
 				83922DD81DC22FEE001026BA /* BE */,
 				83922DA21DC22AA7001026BA /* AppDelegate.swift */,
 				83922DAC1DC22AA7001026BA /* Assets.xcassets */,
@@ -81,17 +99,9 @@
 		83922DCF1DC22FEE001026BA /* Clases Generales */ = {
 			isa = PBXGroup;
 			children = (
-				83922DD01DC22FEE001026BA /* Sincronizar */,
+				838A8E6B1DC23A0B0064A1CA /* Sincro */,
 			);
 			path = "Clases Generales";
-			sourceTree = "<group>";
-		};
-		83922DD01DC22FEE001026BA /* Sincronizar */ = {
-			isa = PBXGroup;
-			children = (
-				83922DDA1DC23057001026BA /* Sincronizar.swift */,
-			);
-			path = Sincronizar;
 			sourceTree = "<group>";
 		};
 		83922DD11DC22FEE001026BA /* WS */ = {
@@ -141,13 +151,6 @@
 				83922DDC1DC231FE001026BA /* MainPeliculas.storyboard */,
 			);
 			path = Vistas;
-			sourceTree = "<group>";
-		};
-		83922DD71DC22FEE001026BA /* DALC */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DALC;
 			sourceTree = "<group>";
 		};
 		83922DD81DC22FEE001026BA /* BE */ = {
@@ -239,13 +242,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				838A8E701DC23A550064A1CA /* HorariosDALC.swift in Sources */,
 				83922DAB1DC22AA7001026BA /* PeliculasCJ.xcdatamodeld in Sources */,
 				83922DE31DC2340D001026BA /* PeliculaBE.swift in Sources */,
 				83922DE51DC2357C001026BA /* SucursalBE.swift in Sources */,
 				83922DDF1DC2337E001026BA /* PeliculasViewController.swift in Sources */,
 				83922DA31DC22AA7001026BA /* AppDelegate.swift in Sources */,
-				83922DDB1DC23057001026BA /* Sincronizar.swift in Sources */,
 				83922DE11DC233D6001026BA /* PeliculasTableViewCell.swift in Sources */,
+				838A8E6D1DC23A240064A1CA /* SincronizarBC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
