@@ -11,7 +11,6 @@ import UIKit
 class PeliculasTableViewCell: UITableViewCell{
     
     @IBOutlet weak var imgPelicula: UIImageView!
-    
     @IBOutlet weak var lblNombrePelicula: UILabel!
     
     var objPelicula : Pelicula?
@@ -20,7 +19,7 @@ class PeliculasTableViewCell: UITableViewCell{
         
         self.lblNombrePelicula.text = self.objPelicula?.pelicula_nombre!
         
-        CDMImageDownloaded.descargarImagen(enURL: self.objPelicula?.pelicula_Imagen, paraImageView: self.imgPelicula, conPlaceHolder: nil) { (esCorrecto, nombreImagen, imagen) in
+        CDMImageDownloaded.descargarImagen(enURL: self.objPelicula?.pelicula_urlImagen, paraImageView: self.imgPelicula, conPlaceHolder: nil) { (esCorrecto, nombreImagen, imagen) in
             
             self.imgPelicula.image = imagen
         }

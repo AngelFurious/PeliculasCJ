@@ -33,6 +33,10 @@
 		83E7DE4D1DC7E832000DC701 /* PeliculaDALC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E7DE4C1DC7E832000DC701 /* PeliculaDALC.swift */; };
 		83E7DE501DC7EC70000DC701 /* CDMImageDownloaded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E7DE4F1DC7EC70000DC701 /* CDMImageDownloaded.swift */; };
 		83E7DE531DC7EF1B000DC701 /* ListadoPeliculas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83E7DE521DC7EF1B000DC701 /* ListadoPeliculas.storyboard */; };
+		83E7DE581DC7F8D4000DC701 /* CDMWebModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E7DE571DC7F8D4000DC701 /* CDMWebModel.swift */; };
+		83E7DE5A1DC7F8EA000DC701 /* CDMWebResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E7DE591DC7F8EA000DC701 /* CDMWebResponse.swift */; };
+		83E7DE5C1DC7F901000DC701 /* CDMWebSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E7DE5B1DC7F901000DC701 /* CDMWebSender.swift */; };
+		83E7DE5E1DC7F916000DC701 /* CDMWebTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E7DE5D1DC7F916000DC701 /* CDMWebTranslator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +68,10 @@
 		83E7DE4C1DC7E832000DC701 /* PeliculaDALC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeliculaDALC.swift; sourceTree = "<group>"; };
 		83E7DE4F1DC7EC70000DC701 /* CDMImageDownloaded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMImageDownloaded.swift; sourceTree = "<group>"; };
 		83E7DE521DC7EF1B000DC701 /* ListadoPeliculas.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ListadoPeliculas.storyboard; sourceTree = "<group>"; };
+		83E7DE571DC7F8D4000DC701 /* CDMWebModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMWebModel.swift; sourceTree = "<group>"; };
+		83E7DE591DC7F8EA000DC701 /* CDMWebResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMWebResponse.swift; sourceTree = "<group>"; };
+		83E7DE5B1DC7F901000DC701 /* CDMWebSender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMWebSender.swift; sourceTree = "<group>"; };
+		83E7DE5D1DC7F916000DC701 /* CDMWebTranslator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMWebTranslator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,7 @@
 				83E7DE0E1DC7D641000DC701 /* IPhone */,
 				83E7DE141DC7D684000DC701 /* BE */,
 				83E7DE161DC7D692000DC701 /* DALC */,
+				83E7DE541DC7F891000DC701 /* WS */,
 				83922DAC1DC22AA7001026BA /* Assets.xcassets */,
 				83922DAE1DC22AA7001026BA /* LaunchScreen.storyboard */,
 				83922DB11DC22AA7001026BA /* Info.plist */,
@@ -215,6 +224,17 @@
 			path = Vistas;
 			sourceTree = "<group>";
 		};
+		83E7DE541DC7F891000DC701 /* WS */ = {
+			isa = PBXGroup;
+			children = (
+				83E7DE571DC7F8D4000DC701 /* CDMWebModel.swift */,
+				83E7DE591DC7F8EA000DC701 /* CDMWebResponse.swift */,
+				83E7DE5B1DC7F901000DC701 /* CDMWebSender.swift */,
+				83E7DE5D1DC7F916000DC701 /* CDMWebTranslator.swift */,
+			);
+			path = WS;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -293,15 +313,19 @@
 				83E7DE411DC7E0F9000DC701 /* Cadena+CoreDataProperties.swift in Sources */,
 				83E7DE491DC7E13C000DC701 /* HorarioBE.swift in Sources */,
 				83E7DE4B1DC7E7C7000DC701 /* PeliculaBE.swift in Sources */,
+				83E7DE5A1DC7F8EA000DC701 /* CDMWebResponse.swift in Sources */,
 				83E7DE251DC7DE52000DC701 /* PeliculasViewController.swift in Sources */,
 				83E7DE3F1DC7E0F9000DC701 /* Horario+CoreDataProperties.swift in Sources */,
+				83E7DE5E1DC7F916000DC701 /* CDMWebTranslator.swift in Sources */,
 				83E7DE3D1DC7E0F9000DC701 /* Pelicula+CoreDataProperties.swift in Sources */,
 				83E7DE311DC7E090000DC701 /* CadenaDALC.swift in Sources */,
 				83E7DE471DC7E12E000DC701 /* SucursalBE.swift in Sources */,
 				83922DA31DC22AA7001026BA /* AppDelegate.swift in Sources */,
 				83E7DE501DC7EC70000DC701 /* CDMImageDownloaded.swift in Sources */,
+				83E7DE5C1DC7F901000DC701 /* CDMWebSender.swift in Sources */,
 				83E7DE4D1DC7E832000DC701 /* PeliculaDALC.swift in Sources */,
 				83E7DE3C1DC7E0F9000DC701 /* Pelicula+CoreDataClass.swift in Sources */,
+				83E7DE581DC7F8D4000DC701 /* CDMWebModel.swift in Sources */,
 				83E7DE451DC7E11D000DC701 /* CadenaBE.swift in Sources */,
 				83E7DE3B1DC7E0F9000DC701 /* Sucursal+CoreDataProperties.swift in Sources */,
 				83E7DE1A1DC7D797000DC701 /* Sincronizar.swift in Sources */,

@@ -29,11 +29,11 @@ class Sincronizar: NSObject {
             
             arrayPeliculasDM = PeliculaDALC.listarTodasLasPeliculas(conContexto: contexto)
             arraySucursalesDM = SucursalDALC.listarTodasLasSucursales(conContexto: contexto)
-            let arrayHorariosDM = HorarioDALC.listarTodasLosHorarios(conContexto: contexto)
+            let arrayHorariosDM = HorariosDALC.listarTodasLosHorarios(conContexto: contexto)
             
             arrayHorarios.enumerateObjects({ (obj, idx, stop) in
                 
-                HorarioDALC.agregar(horario: obj as! HorarioBE, conArrayPeliculas: arrayPeliculasDM, conArraySucursales: arraySucursalesDM, enArrayHorario: arrayHorariosDM, conContexto: contexto)
+                HorariosDALC.agregar(horario: obj as! HorarioBE, conArrayPeliculas: arrayPeliculasDM, conArraySucursales: arraySucursalesDM, enArrayHorario: arrayHorariosDM, conContexto: contexto)
             })
             
             appDelegate.saveContext()
