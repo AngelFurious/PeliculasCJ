@@ -31,6 +31,7 @@
 		83E7DE491DC7E13C000DC701 /* HorarioBE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E7DE481DC7E13C000DC701 /* HorarioBE.swift */; };
 		83E7DE4B1DC7E7C7000DC701 /* PeliculaBE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E7DE4A1DC7E7C7000DC701 /* PeliculaBE.swift */; };
 		83E7DE4D1DC7E832000DC701 /* PeliculaDALC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E7DE4C1DC7E832000DC701 /* PeliculaDALC.swift */; };
+		83E7DE501DC7EC70000DC701 /* CDMImageDownloaded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E7DE4F1DC7EC70000DC701 /* CDMImageDownloaded.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		83E7DE481DC7E13C000DC701 /* HorarioBE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorarioBE.swift; sourceTree = "<group>"; };
 		83E7DE4A1DC7E7C7000DC701 /* PeliculaBE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeliculaBE.swift; sourceTree = "<group>"; };
 		83E7DE4C1DC7E832000DC701 /* PeliculaDALC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeliculaDALC.swift; sourceTree = "<group>"; };
+		83E7DE4F1DC7EC70000DC701 /* CDMImageDownloaded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMImageDownloaded.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 		83E7DE0C1DC7D622000DC701 /* Clases Generales */ = {
 			isa = PBXGroup;
 			children = (
+				83E7DE4E1DC7EC49000DC701 /* CDMImageDownloaded */,
 				83E7DE0D1DC7D62D000DC701 /* Sincronizar */,
 			);
 			path = "Clases Generales";
@@ -193,6 +196,14 @@
 			path = BC;
 			sourceTree = "<group>";
 		};
+		83E7DE4E1DC7EC49000DC701 /* CDMImageDownloaded */ = {
+			isa = PBXGroup;
+			children = (
+				83E7DE4F1DC7EC70000DC701 /* CDMImageDownloaded.swift */,
+			);
+			path = CDMImageDownloaded;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -276,6 +287,7 @@
 				83E7DE311DC7E090000DC701 /* CadenaDALC.swift in Sources */,
 				83E7DE471DC7E12E000DC701 /* SucursalBE.swift in Sources */,
 				83922DA31DC22AA7001026BA /* AppDelegate.swift in Sources */,
+				83E7DE501DC7EC70000DC701 /* CDMImageDownloaded.swift in Sources */,
 				83E7DE4D1DC7E832000DC701 /* PeliculaDALC.swift in Sources */,
 				83E7DE3C1DC7E0F9000DC701 /* Pelicula+CoreDataClass.swift in Sources */,
 				83E7DE451DC7E11D000DC701 /* CadenaBE.swift in Sources */,
