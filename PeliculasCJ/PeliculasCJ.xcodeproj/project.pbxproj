@@ -12,6 +12,25 @@
 		83922DAD1DC22AA7001026BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83922DAC1DC22AA7001026BA /* Assets.xcassets */; };
 		83922DB01DC22AA7001026BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83922DAE1DC22AA7001026BA /* LaunchScreen.storyboard */; };
 		83E7DE1A1DC7D797000DC701 /* Sincronizar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E7DE191DC7D797000DC701 /* Sincronizar.swift */; };
+		83E7DE251DC7DE52000DC701 /* PeliculasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E7DE241DC7DE52000DC701 /* PeliculasViewController.swift */; };
+		83E7DE271DC7DE69000DC701 /* PeliculasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E7DE261DC7DE69000DC701 /* PeliculasTableViewCell.swift */; };
+		83E7DE291DC7DED8000DC701 /* PeliculasBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E7DE281DC7DED8000DC701 /* PeliculasBC.swift */; };
+		83E7DE2D1DC7E02E000DC701 /* HorariosDALC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E7DE2C1DC7E02E000DC701 /* HorariosDALC.swift */; };
+		83E7DE2F1DC7E03C000DC701 /* SucursalDALC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E7DE2E1DC7E03C000DC701 /* SucursalDALC.swift */; };
+		83E7DE311DC7E090000DC701 /* CadenaDALC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E7DE301DC7E090000DC701 /* CadenaDALC.swift */; };
+		83E7DE3A1DC7E0F9000DC701 /* Sucursal+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E7DE321DC7E0F9000DC701 /* Sucursal+CoreDataClass.swift */; };
+		83E7DE3B1DC7E0F9000DC701 /* Sucursal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E7DE331DC7E0F9000DC701 /* Sucursal+CoreDataProperties.swift */; };
+		83E7DE3C1DC7E0F9000DC701 /* Pelicula+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E7DE341DC7E0F9000DC701 /* Pelicula+CoreDataClass.swift */; };
+		83E7DE3D1DC7E0F9000DC701 /* Pelicula+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E7DE351DC7E0F9000DC701 /* Pelicula+CoreDataProperties.swift */; };
+		83E7DE3E1DC7E0F9000DC701 /* Horario+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E7DE361DC7E0F9000DC701 /* Horario+CoreDataClass.swift */; };
+		83E7DE3F1DC7E0F9000DC701 /* Horario+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E7DE371DC7E0F9000DC701 /* Horario+CoreDataProperties.swift */; };
+		83E7DE401DC7E0F9000DC701 /* Cadena+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E7DE381DC7E0F9000DC701 /* Cadena+CoreDataClass.swift */; };
+		83E7DE411DC7E0F9000DC701 /* Cadena+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E7DE391DC7E0F9000DC701 /* Cadena+CoreDataProperties.swift */; };
+		83E7DE451DC7E11D000DC701 /* CadenaBE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E7DE441DC7E11D000DC701 /* CadenaBE.swift */; };
+		83E7DE471DC7E12E000DC701 /* SucursalBE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E7DE461DC7E12E000DC701 /* SucursalBE.swift */; };
+		83E7DE491DC7E13C000DC701 /* HorarioBE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E7DE481DC7E13C000DC701 /* HorarioBE.swift */; };
+		83E7DE4B1DC7E7C7000DC701 /* PeliculaBE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E7DE4A1DC7E7C7000DC701 /* PeliculaBE.swift */; };
+		83E7DE4D1DC7E832000DC701 /* PeliculaDALC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E7DE4C1DC7E832000DC701 /* PeliculaDALC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +41,25 @@
 		83922DAF1DC22AA7001026BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83922DB11DC22AA7001026BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83E7DE191DC7D797000DC701 /* Sincronizar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sincronizar.swift; sourceTree = "<group>"; };
+		83E7DE241DC7DE52000DC701 /* PeliculasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeliculasViewController.swift; sourceTree = "<group>"; };
+		83E7DE261DC7DE69000DC701 /* PeliculasTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeliculasTableViewCell.swift; sourceTree = "<group>"; };
+		83E7DE281DC7DED8000DC701 /* PeliculasBC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeliculasBC.swift; sourceTree = "<group>"; };
+		83E7DE2C1DC7E02E000DC701 /* HorariosDALC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorariosDALC.swift; sourceTree = "<group>"; };
+		83E7DE2E1DC7E03C000DC701 /* SucursalDALC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SucursalDALC.swift; sourceTree = "<group>"; };
+		83E7DE301DC7E090000DC701 /* CadenaDALC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CadenaDALC.swift; sourceTree = "<group>"; };
+		83E7DE321DC7E0F9000DC701 /* Sucursal+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sucursal+CoreDataClass.swift"; sourceTree = "<group>"; };
+		83E7DE331DC7E0F9000DC701 /* Sucursal+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sucursal+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		83E7DE341DC7E0F9000DC701 /* Pelicula+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pelicula+CoreDataClass.swift"; sourceTree = "<group>"; };
+		83E7DE351DC7E0F9000DC701 /* Pelicula+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pelicula+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		83E7DE361DC7E0F9000DC701 /* Horario+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Horario+CoreDataClass.swift"; sourceTree = "<group>"; };
+		83E7DE371DC7E0F9000DC701 /* Horario+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Horario+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		83E7DE381DC7E0F9000DC701 /* Cadena+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Cadena+CoreDataClass.swift"; sourceTree = "<group>"; };
+		83E7DE391DC7E0F9000DC701 /* Cadena+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Cadena+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		83E7DE441DC7E11D000DC701 /* CadenaBE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CadenaBE.swift; sourceTree = "<group>"; };
+		83E7DE461DC7E12E000DC701 /* SucursalBE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SucursalBE.swift; sourceTree = "<group>"; };
+		83E7DE481DC7E13C000DC701 /* HorarioBE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorarioBE.swift; sourceTree = "<group>"; };
+		83E7DE4A1DC7E7C7000DC701 /* PeliculaBE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeliculaBE.swift; sourceTree = "<group>"; };
+		83E7DE4C1DC7E832000DC701 /* PeliculaDALC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeliculaDALC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +125,6 @@
 			isa = PBXGroup;
 			children = (
 				83E7DE0F1DC7D651000DC701 /* Clases */,
-				83E7DE111DC7D669000DC701 /* Vistas */,
 			);
 			path = IPhone;
 			sourceTree = "<group>";
@@ -96,36 +133,28 @@
 			isa = PBXGroup;
 			children = (
 				83E7DE121DC7D671000DC701 /* Peliculas */,
-				83E7DE131DC7D678000DC701 /* BC */,
 			);
 			path = Clases;
-			sourceTree = "<group>";
-		};
-		83E7DE111DC7D669000DC701 /* Vistas */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Vistas;
 			sourceTree = "<group>";
 		};
 		83E7DE121DC7D671000DC701 /* Peliculas */ = {
 			isa = PBXGroup;
 			children = (
+				83E7DE1F1DC7DD97000DC701 /* BC */,
+				83E7DE241DC7DE52000DC701 /* PeliculasViewController.swift */,
+				83E7DE261DC7DE69000DC701 /* PeliculasTableViewCell.swift */,
 			);
 			path = Peliculas;
-			sourceTree = "<group>";
-		};
-		83E7DE131DC7D678000DC701 /* BC */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = BC;
 			sourceTree = "<group>";
 		};
 		83E7DE141DC7D684000DC701 /* BE */ = {
 			isa = PBXGroup;
 			children = (
 				83E7DE151DC7D688000DC701 /* DM */,
+				83E7DE441DC7E11D000DC701 /* CadenaBE.swift */,
+				83E7DE461DC7E12E000DC701 /* SucursalBE.swift */,
+				83E7DE481DC7E13C000DC701 /* HorarioBE.swift */,
+				83E7DE4A1DC7E7C7000DC701 /* PeliculaBE.swift */,
 			);
 			path = BE;
 			sourceTree = "<group>";
@@ -133,6 +162,14 @@
 		83E7DE151DC7D688000DC701 /* DM */ = {
 			isa = PBXGroup;
 			children = (
+				83E7DE321DC7E0F9000DC701 /* Sucursal+CoreDataClass.swift */,
+				83E7DE331DC7E0F9000DC701 /* Sucursal+CoreDataProperties.swift */,
+				83E7DE341DC7E0F9000DC701 /* Pelicula+CoreDataClass.swift */,
+				83E7DE351DC7E0F9000DC701 /* Pelicula+CoreDataProperties.swift */,
+				83E7DE361DC7E0F9000DC701 /* Horario+CoreDataClass.swift */,
+				83E7DE371DC7E0F9000DC701 /* Horario+CoreDataProperties.swift */,
+				83E7DE381DC7E0F9000DC701 /* Cadena+CoreDataClass.swift */,
+				83E7DE391DC7E0F9000DC701 /* Cadena+CoreDataProperties.swift */,
 			);
 			path = DM;
 			sourceTree = "<group>";
@@ -140,8 +177,20 @@
 		83E7DE161DC7D692000DC701 /* DALC */ = {
 			isa = PBXGroup;
 			children = (
+				83E7DE2C1DC7E02E000DC701 /* HorariosDALC.swift */,
+				83E7DE2E1DC7E03C000DC701 /* SucursalDALC.swift */,
+				83E7DE301DC7E090000DC701 /* CadenaDALC.swift */,
+				83E7DE4C1DC7E832000DC701 /* PeliculaDALC.swift */,
 			);
 			path = DALC;
+			sourceTree = "<group>";
+		};
+		83E7DE1F1DC7DD97000DC701 /* BC */ = {
+			isa = PBXGroup;
+			children = (
+				83E7DE281DC7DED8000DC701 /* PeliculasBC.swift */,
+			);
+			path = BC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,9 +264,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83E7DE2D1DC7E02E000DC701 /* HorariosDALC.swift in Sources */,
 				83922DAB1DC22AA7001026BA /* PeliculasCJ.xcdatamodeld in Sources */,
+				83E7DE3A1DC7E0F9000DC701 /* Sucursal+CoreDataClass.swift in Sources */,
+				83E7DE411DC7E0F9000DC701 /* Cadena+CoreDataProperties.swift in Sources */,
+				83E7DE491DC7E13C000DC701 /* HorarioBE.swift in Sources */,
+				83E7DE4B1DC7E7C7000DC701 /* PeliculaBE.swift in Sources */,
+				83E7DE251DC7DE52000DC701 /* PeliculasViewController.swift in Sources */,
+				83E7DE3F1DC7E0F9000DC701 /* Horario+CoreDataProperties.swift in Sources */,
+				83E7DE3D1DC7E0F9000DC701 /* Pelicula+CoreDataProperties.swift in Sources */,
+				83E7DE311DC7E090000DC701 /* CadenaDALC.swift in Sources */,
+				83E7DE471DC7E12E000DC701 /* SucursalBE.swift in Sources */,
 				83922DA31DC22AA7001026BA /* AppDelegate.swift in Sources */,
+				83E7DE4D1DC7E832000DC701 /* PeliculaDALC.swift in Sources */,
+				83E7DE3C1DC7E0F9000DC701 /* Pelicula+CoreDataClass.swift in Sources */,
+				83E7DE451DC7E11D000DC701 /* CadenaBE.swift in Sources */,
+				83E7DE3B1DC7E0F9000DC701 /* Sucursal+CoreDataProperties.swift in Sources */,
 				83E7DE1A1DC7D797000DC701 /* Sincronizar.swift in Sources */,
+				83E7DE271DC7DE69000DC701 /* PeliculasTableViewCell.swift in Sources */,
+				83E7DE2F1DC7E03C000DC701 /* SucursalDALC.swift in Sources */,
+				83E7DE3E1DC7E0F9000DC701 /* Horario+CoreDataClass.swift in Sources */,
+				83E7DE291DC7DED8000DC701 /* PeliculasBC.swift in Sources */,
+				83E7DE401DC7E0F9000DC701 /* Cadena+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
