@@ -32,6 +32,7 @@
 		83E7DE4B1DC7E7C7000DC701 /* PeliculaBE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E7DE4A1DC7E7C7000DC701 /* PeliculaBE.swift */; };
 		83E7DE4D1DC7E832000DC701 /* PeliculaDALC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E7DE4C1DC7E832000DC701 /* PeliculaDALC.swift */; };
 		83E7DE501DC7EC70000DC701 /* CDMImageDownloaded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E7DE4F1DC7EC70000DC701 /* CDMImageDownloaded.swift */; };
+		83E7DE531DC7EF1B000DC701 /* ListadoPeliculas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83E7DE521DC7EF1B000DC701 /* ListadoPeliculas.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		83E7DE4A1DC7E7C7000DC701 /* PeliculaBE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeliculaBE.swift; sourceTree = "<group>"; };
 		83E7DE4C1DC7E832000DC701 /* PeliculaDALC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeliculaDALC.swift; sourceTree = "<group>"; };
 		83E7DE4F1DC7EC70000DC701 /* CDMImageDownloaded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMImageDownloaded.swift; sourceTree = "<group>"; };
+		83E7DE521DC7EF1B000DC701 /* ListadoPeliculas.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ListadoPeliculas.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 		83E7DE0E1DC7D641000DC701 /* IPhone */ = {
 			isa = PBXGroup;
 			children = (
+				83E7DE511DC7EEDB000DC701 /* Vistas */,
 				83E7DE0F1DC7D651000DC701 /* Clases */,
 			);
 			path = IPhone;
@@ -204,6 +207,14 @@
 			path = CDMImageDownloaded;
 			sourceTree = "<group>";
 		};
+		83E7DE511DC7EEDB000DC701 /* Vistas */ = {
+			isa = PBXGroup;
+			children = (
+				83E7DE521DC7EF1B000DC701 /* ListadoPeliculas.storyboard */,
+			);
+			path = Vistas;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -265,6 +276,7 @@
 			files = (
 				83922DB01DC22AA7001026BA /* LaunchScreen.storyboard in Resources */,
 				83922DAD1DC22AA7001026BA /* Assets.xcassets in Resources */,
+				83E7DE531DC7EF1B000DC701 /* ListadoPeliculas.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

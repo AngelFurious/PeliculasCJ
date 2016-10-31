@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Peliculas View Controller-->
+        <scene sceneID="zbd-tk-Npu">
+            <objects>
+                <viewController storyboardIdentifier="PeliculasViewController" id="izD-Pg-Y9h" customClass="PeliculasViewController" customModule="PeliculasCJ" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vwp-wj-Nkj"/>
+                        <viewControllerLayoutGuide type="bottom" id="tdd-s3-yRg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2DF-Sm-yaf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="210" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kO2-Ln-jzI">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PeliculasTableViewCell" rowHeight="210" id="r7b-rL-RkP" customClass="PeliculasTableViewCell" customModule="PeliculasCJ" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="210"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="r7b-rL-RkP" id="WgK-x5-Tz4">
+                                            <frame key="frameInset" width="320" height="209"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="usE-cf-4Ce">
+                                                    <frame key="frameInset" minX="8" minY="8" width="304" height="141"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HyX-eX-kxB">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="37" id="JTW-hL-B5b"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="HyX-eX-kxB" firstAttribute="leading" secondItem="WgK-x5-Tz4" secondAttribute="leadingMargin" constant="65" id="4Vx-as-deO"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="HyX-eX-kxB" secondAttribute="trailing" constant="65" id="XcX-W9-9lE"/>
+                                                <constraint firstItem="HyX-eX-kxB" firstAttribute="bottom" secondItem="WgK-x5-Tz4" secondAttribute="bottomMargin" id="e8d-Fj-aPu"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="imgPelicula" destination="usE-cf-4Ce" id="OTr-yO-lIr"/>
+                                            <outlet property="lblNombrePelicula" destination="HyX-eX-kxB" id="jHv-Wp-Hw7"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="izD-Pg-Y9h" id="IZK-Sq-Pxl"/>
+                                    <outlet property="delegate" destination="izD-Pg-Y9h" id="WEo-yb-PXF"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="kO2-Ln-jzI" secondAttribute="trailing" id="LeG-kc-coZ"/>
+                            <constraint firstItem="kO2-Ln-jzI" firstAttribute="leading" secondItem="2DF-Sm-yaf" secondAttribute="leading" id="bDb-gR-tee"/>
+                            <constraint firstItem="kO2-Ln-jzI" firstAttribute="top" secondItem="2DF-Sm-yaf" secondAttribute="top" id="fLQ-Px-a7a"/>
+                            <constraint firstItem="tdd-s3-yRg" firstAttribute="top" secondItem="kO2-Ln-jzI" secondAttribute="bottom" id="urR-15-UT3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tblPeliculas" destination="kO2-Ln-jzI" id="0hv-JF-H6g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cGo-Tw-1IU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="126" y="126"/>
+        </scene>
+    </scenes>
+</document>

@@ -8,9 +8,9 @@
 
 import UIKit
 
-class PeliculasViewController: UIViewController {
+class PeliculasViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{    
     
-    //@IBOutlet weak var TbPeliculas: UITableView!
+    @IBOutlet weak var tblPeliculas: UITableView!
     
     var arrayPeliculas = NSMutableArray()
     

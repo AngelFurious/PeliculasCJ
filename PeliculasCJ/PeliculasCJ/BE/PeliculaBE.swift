@@ -9,8 +9,9 @@
 import UIKit
 
 class PeliculaBE: NSObject {
-    var pelicula_nombre: String?
-    var pelicula_urlImagen: String?
-    var pelicula_resumen: String?
-    var pelicula_id: String?
+    
+    var pelicula_nombre : String?
+    var pelicula_resumen : String?
+    var pelicula_id : String?
+    var pelicula_Imagen : String?
 }
