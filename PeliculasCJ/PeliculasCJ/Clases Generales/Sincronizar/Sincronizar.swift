@@ -1,16 +1,14 @@
 //
-//  SincronizarBC.swift
+//  Sincronizar.swift
 //  PeliculasCJ
 //
-//  Created by B303-21 on 27/10/16.
+//  Created by B303-20 on 31/10/16.
 //  Copyright © 2016 B303-20. All rights reserved.
 //
 
 import UIKit
 
-class SincronizarBC: NSObject {
-    
-    
+class Sincronizar: NSObject {
     class func iniciarSincronizacion(conCompletion completion : @escaping () -> Void){
         
         CDMWebModel.obtenerInformacion { (arrayPeliculas, arraySucursales, arrayHorarios) in
