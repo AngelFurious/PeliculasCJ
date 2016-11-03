@@ -39,8 +39,16 @@ class PeliculasViewController: UIViewController,UITableViewDelegate,UITableViewD
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        PeliculasBC.listarPeliculas { (arrayPeliculas) in
+            self.arrayPeliculas = arrayPeliculas
+            self.tblPeliculas.reloadData()
+        }
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle{
+        
+        return .lightContent
     }
 
     override func didReceiveMemoryWarning() {
