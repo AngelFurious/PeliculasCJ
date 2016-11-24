@@ -18,25 +18,7 @@ extension Sucursal {
     @NSManaged public var sucursal_direccion: String?
     @NSManaged public var sucursal_id: String?
     @NSManaged public var sucursal_nombre: String?
-    @NSManaged public var cadena: NSSet?
     @NSManaged public var horarios: NSSet?
-
-}
-
-// MARK: Generated accessors for cadena
-extension Sucursal {
-
-    @objc(addCadenaObject:)
-    @NSManaged public func addToCadena(_ value: Cadena)
-
-    @objc(removeCadenaObject:)
-    @NSManaged public func removeFromCadena(_ value: Cadena)
-
-    @objc(addCadena:)
-    @NSManaged public func addToCadena(_ values: NSSet)
-
-    @objc(removeCadena:)
-    @NSManaged public func removeFromCadena(_ values: NSSet)
 
 }
 

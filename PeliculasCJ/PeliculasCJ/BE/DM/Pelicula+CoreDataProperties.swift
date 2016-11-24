@@ -19,7 +19,6 @@ extension Pelicula {
     @NSManaged public var pelicula_nombre: String?
     @NSManaged public var pelicula_resumen: String?
     @NSManaged public var pelicula_urlImagen: String?
-    @NSManaged public var pelicula_horario: String?
     @NSManaged public var horarios: NSSet?
 
 }
