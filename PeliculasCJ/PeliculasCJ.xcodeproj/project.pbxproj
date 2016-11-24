@@ -11,6 +11,9 @@
 		83922DAB1DC22AA7001026BA /* PeliculasCJ.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 83922DA91DC22AA7001026BA /* PeliculasCJ.xcdatamodeld */; };
 		83922DAD1DC22AA7001026BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83922DAC1DC22AA7001026BA /* Assets.xcassets */; };
 		83922DB01DC22AA7001026BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83922DAE1DC22AA7001026BA /* LaunchScreen.storyboard */; };
+		83C249C91DE739E800AE1BA4 /* HorarioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C249C81DE739E800AE1BA4 /* HorarioTableViewCell.swift */; };
+		83C249EE1DE74EBA00AE1BA4 /* HorariosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C249ED1DE74EBA00AE1BA4 /* HorariosViewController.swift */; };
+		83C249F01DE7519100AE1BA4 /* HorarioBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C249EF1DE7519100AE1BA4 /* HorarioBC.swift */; };
 		83CD615C1DD4CA9300AC0ACF /* PeliculasCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CD615B1DD4CA9300AC0ACF /* PeliculasCollectionViewCell.swift */; };
 		83CD615E1DD4CBA100AC0ACF /* PeliculasCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CD615D1DD4CBA100AC0ACF /* PeliculasCollectionViewController.swift */; };
 		83CD61601DD4DFC900AC0ACF /* DetallePeliculaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CD615F1DD4DFC900AC0ACF /* DetallePeliculaViewController.swift */; };
@@ -49,6 +52,9 @@
 		83922DAC1DC22AA7001026BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83922DAF1DC22AA7001026BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83922DB11DC22AA7001026BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83C249C81DE739E800AE1BA4 /* HorarioTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorarioTableViewCell.swift; sourceTree = "<group>"; };
+		83C249ED1DE74EBA00AE1BA4 /* HorariosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorariosViewController.swift; sourceTree = "<group>"; };
+		83C249EF1DE7519100AE1BA4 /* HorarioBC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorarioBC.swift; sourceTree = "<group>"; };
 		83CD615B1DD4CA9300AC0ACF /* PeliculasCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeliculasCollectionViewCell.swift; sourceTree = "<group>"; };
 		83CD615D1DD4CBA100AC0ACF /* PeliculasCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeliculasCollectionViewController.swift; sourceTree = "<group>"; };
 		83CD615F1DD4DFC900AC0ACF /* DetallePeliculaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetallePeliculaViewController.swift; sourceTree = "<group>"; };
@@ -167,6 +173,8 @@
 				83CD615B1DD4CA9300AC0ACF /* PeliculasCollectionViewCell.swift */,
 				83CD615D1DD4CBA100AC0ACF /* PeliculasCollectionViewController.swift */,
 				83CD615F1DD4DFC900AC0ACF /* DetallePeliculaViewController.swift */,
+				83C249C81DE739E800AE1BA4 /* HorarioTableViewCell.swift */,
+				83C249ED1DE74EBA00AE1BA4 /* HorariosViewController.swift */,
 			);
 			path = Peliculas;
 			sourceTree = "<group>";
@@ -213,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				83E7DE281DC7DED8000DC701 /* PeliculasBC.swift */,
+				83C249EF1DE7519100AE1BA4 /* HorarioBC.swift */,
 			);
 			path = BC;
 			sourceTree = "<group>";
@@ -319,6 +328,7 @@
 				83E7DE2D1DC7E02E000DC701 /* HorariosDALC.swift in Sources */,
 				83922DAB1DC22AA7001026BA /* PeliculasCJ.xcdatamodeld in Sources */,
 				83E7DE3A1DC7E0F9000DC701 /* Sucursal+CoreDataClass.swift in Sources */,
+				83C249C91DE739E800AE1BA4 /* HorarioTableViewCell.swift in Sources */,
 				83CD61601DD4DFC900AC0ACF /* DetallePeliculaViewController.swift in Sources */,
 				83E7DE411DC7E0F9000DC701 /* Cadena+CoreDataProperties.swift in Sources */,
 				83E7DE491DC7E13C000DC701 /* HorarioBE.swift in Sources */,
@@ -336,6 +346,7 @@
 				83E7DE5C1DC7F901000DC701 /* CDMWebSender.swift in Sources */,
 				83E7DE4D1DC7E832000DC701 /* PeliculaDALC.swift in Sources */,
 				83E7DE3C1DC7E0F9000DC701 /* Pelicula+CoreDataClass.swift in Sources */,
+				83C249F01DE7519100AE1BA4 /* HorarioBC.swift in Sources */,
 				83E7DE581DC7F8D4000DC701 /* CDMWebModel.swift in Sources */,
 				83E7DE451DC7E11D000DC701 /* CadenaBE.swift in Sources */,
 				83E7DE3B1DC7E0F9000DC701 /* Sucursal+CoreDataProperties.swift in Sources */,
@@ -344,6 +355,7 @@
 				83CD615C1DD4CA9300AC0ACF /* PeliculasCollectionViewCell.swift in Sources */,
 				83E7DE2F1DC7E03C000DC701 /* SucursalDALC.swift in Sources */,
 				83E7DE3E1DC7E0F9000DC701 /* Horario+CoreDataClass.swift in Sources */,
+				83C249EE1DE74EBA00AE1BA4 /* HorariosViewController.swift in Sources */,
 				83E7DE291DC7DED8000DC701 /* PeliculasBC.swift in Sources */,
 				83E7DE401DC7E0F9000DC701 /* Cadena+CoreDataClass.swift in Sources */,
 			);

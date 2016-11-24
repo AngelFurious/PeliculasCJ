@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="15G31" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Cadena" representedClassName=".Cadena" syncable="YES">
-        <attribute name="cadena_descripcion" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="cadena_id" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="cadena_nombre" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="cadena_urlImagen" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="sucursales" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Sucursal" inverseName="cadena" inverseEntity="Sucursal" syncable="YES"/>
-    </entity>
     <entity name="Horario" representedClassName=".Horario" syncable="YES">
         <attribute name="horario_horario" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="pelicula" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Pelicula" inverseName="horarios" inverseEntity="Pelicula" syncable="YES"/>
@@ -23,13 +16,11 @@
         <attribute name="sucursal_direccion" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="sucursal_id" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="sucursal_nombre" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="cadena" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Cadena" inverseName="sucursales" inverseEntity="Cadena" syncable="YES"/>
         <relationship name="horarios" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Horario" inverseName="sucursal" inverseEntity="Horario" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Cadena" positionX="-1028" positionY="-108" width="128" height="118"/>
         <element name="Horario" positionX="-567" positionY="-234" width="128" height="88"/>
         <element name="Pelicula" positionX="-776" positionY="-382" width="128" height="118"/>
-        <element name="Sucursal" positionX="-819" positionY="-189" width="128" height="118"/>
+        <element name="Sucursal" positionX="-819" positionY="-189" width="128" height="103"/>
     </elements>
 </model>

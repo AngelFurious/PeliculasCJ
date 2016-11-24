@@ -24,5 +24,15 @@ class PeliculasCollectionViewCell: UICollectionViewCell {
             self.imgPelicula.image = imagen
         }
     }
+    
+    override func draw(_ rect: CGRect) {
+        
+        self.layer.shadowRadius = 2
+        self.layer.masksToBounds = false
+        self.layer.shadowOpacity = 0.5
+        self.layer.shadowOffset = CGSize(width: 0, height: 0)
+        
+    }
+
 
 }

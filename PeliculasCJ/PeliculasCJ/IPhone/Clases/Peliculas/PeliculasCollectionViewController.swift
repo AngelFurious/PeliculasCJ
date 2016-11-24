@@ -49,6 +49,13 @@ class PeliculasCollectionViewController: UIViewController, UICollectionViewDataS
         return cell
     }
     
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        self.performSegue(withIdentifier: "DetallePeliculaViewController", sender: self.arrayPeliculas[indexPath.row])
+    }
+    
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
         
         let anchoPantalla = UIScreen.main.bounds.size.width
@@ -60,14 +67,19 @@ class PeliculasCollectionViewController: UIViewController, UICollectionViewDataS
     
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "DetallePeliculaViewController" {
+            
+            let controller = segue.destination as! DetallePeliculaViewController
+            controller.objPelicula = sender as! Pelicula
+        }
+        
     }
-    */
+    
 
 }

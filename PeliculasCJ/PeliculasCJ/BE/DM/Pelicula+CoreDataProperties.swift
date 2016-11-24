@@ -2,13 +2,12 @@
 //  Pelicula+CoreDataProperties.swift
 //  PeliculasCJ
 //
-//  Created by B303-20 on 3/11/16.
+//  Created by B303-21 on 24/11/16.
 //  Copyright © 2016 B303-20. All rights reserved.
 //
 
 import Foundation
 import CoreData
-
 
 extension Pelicula {
 
@@ -20,6 +19,7 @@ extension Pelicula {
     @NSManaged public var pelicula_nombre: String?
     @NSManaged public var pelicula_resumen: String?
     @NSManaged public var pelicula_urlImagen: String?
+    @NSManaged public var pelicula_horario: String?
     @NSManaged public var horarios: NSSet?
 
 }

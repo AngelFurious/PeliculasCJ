@@ -2,13 +2,12 @@
 //  Cadena+CoreDataProperties.swift
 //  PeliculasCJ
 //
-//  Created by B303-20 on 3/11/16.
+//  Created by B303-21 on 24/11/16.
 //  Copyright © 2016 B303-20. All rights reserved.
 //
 
 import Foundation
 import CoreData
-
 
 extension Cadena {
 

@@ -8,21 +8,39 @@
 
 import UIKit
 
+
 class DetallePeliculaViewController: UIViewController {
     
     @IBOutlet weak var lblNombrePelicula: UILabel!
-    @IBOutlet weak var lblNombreSucursal: UILabel!
-    @IBOutlet weak var lblHorario: UILabel!
+    @IBOutlet weak var imgPelicula: UIImageView!
     @IBOutlet weak var lblDetalle: UILabel!
     
-    
+    var objPelicula : Pelicula!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        CDMImageDownloaded.descargarImagen(enURL: self.objPelicula.pelicula_urlImagen, paraImageView : imgPelicula , conPlaceHolder: nil) { (error, nombreImagen, imagen) in
+            
+            self.imgPelicula.image = imagen
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+    
+        self.lblNombrePelicula.text = self.objPelicula.pelicula_nombre!
+        self.lblDetalle.text = self.objPelicula.pelicula_resumen!
+        
+ 
+        
     }
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
