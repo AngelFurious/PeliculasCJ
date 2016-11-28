@@ -19,7 +19,7 @@ class DetallePeliculaViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+       
         CDMImageDownloaded.descargarImagen(enURL: self.objPelicula.pelicula_urlImagen, paraImageView : imgPelicula , conPlaceHolder: nil) { (error, nombreImagen, imagen) in
             
             self.imgPelicula.image = imagen

@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Segues with Peek and Pop" minToolsVersion="7.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -101,7 +102,10 @@
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="cLm-QD-gFg" kind="presentation" identifier="PeliculasCollectionViewController" modalTransitionStyle="flipHorizontal" id="yAN-PY-5CY"/>
+                                    <segue destination="cLm-QD-gFg" kind="show" identifier="PeliculasCollectionViewController" id="yAN-PY-5CY">
+                                        <segue key="commit" inheritsFrom="parent" id="38G-kS-ZCN"/>
+                                        <segue key="preview" inheritsFrom="commit" id="wyI-xT-9sf"/>
+                                    </segue>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CINE ALL STARS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNc-Ca-xzo">
@@ -139,7 +143,7 @@
         <!--Peliculas Collection View Controller-->
         <scene sceneID="33T-yY-UUY">
             <objects>
-                <viewController storyboardIdentifier="PeliculasCollectionViewController" modalTransitionStyle="flipHorizontal" id="cLm-QD-gFg" customClass="PeliculasCollectionViewController" customModule="PeliculasCJ" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PeliculasCollectionViewController" modalTransitionStyle="crossDissolve" id="cLm-QD-gFg" customClass="PeliculasCollectionViewController" customModule="PeliculasCJ" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iIu-pS-hIc"/>
                         <viewControllerLayoutGuide type="bottom" id="1B4-qP-ccN"/>
@@ -203,13 +207,13 @@
                             <constraint firstItem="1B4-qP-ccN" firstAttribute="top" secondItem="jwm-xn-p6Z" secondAttribute="bottom" id="8QV-Uq-iGj"/>
                             <constraint firstAttribute="trailing" secondItem="jwm-xn-p6Z" secondAttribute="trailing" id="Cv9-fZ-t5u"/>
                             <constraint firstItem="jwm-xn-p6Z" firstAttribute="leading" secondItem="qHz-At-06P" secondAttribute="leading" id="Gs1-qs-ZEf"/>
-                            <constraint firstItem="jwm-xn-p6Z" firstAttribute="top" secondItem="qHz-At-06P" secondAttribute="top" id="unQ-mu-wLc"/>
+                            <constraint firstItem="jwm-xn-p6Z" firstAttribute="top" secondItem="qHz-At-06P" secondAttribute="top" constant="20" id="unQ-mu-wLc"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6c9-4x-TVe"/>
                     <connections>
                         <outlet property="TablaPeliculasCollectionView" destination="jwm-xn-p6Z" id="DlX-ST-6fJ"/>
-                        <segue destination="ex3-dD-sw9" kind="presentation" identifier="DetallePeliculaViewController" modalTransitionStyle="partialCurl" id="25U-1h-bp5"/>
+                        <segue destination="ex3-dD-sw9" kind="show" identifier="DetallePeliculaViewController" id="25U-1h-bp5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nnF-W7-L5j" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -261,8 +265,8 @@
                             <constraint firstItem="su1-Ce-QAf" firstAttribute="top" secondItem="0Pj-8H-PLT" secondAttribute="bottom" constant="8" id="8Q7-xl-xRc"/>
                             <constraint firstItem="kPZ-WD-6kX" firstAttribute="leading" secondItem="sKf-ew-JhQ" secondAttribute="leadingMargin" constant="36" id="A9k-Kx-wlG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="kPZ-WD-6kX" secondAttribute="trailing" constant="36" id="C7g-VX-e2g"/>
-                            <constraint firstItem="kPZ-WD-6kX" firstAttribute="top" secondItem="g4r-rU-U79" secondAttribute="bottom" constant="8" id="CnX-Vn-FNo"/>
-                            <constraint firstItem="E4V-KL-luq" firstAttribute="top" secondItem="kPZ-WD-6kX" secondAttribute="bottom" constant="23" id="EfJ-X2-sOB"/>
+                            <constraint firstItem="kPZ-WD-6kX" firstAttribute="top" secondItem="g4r-rU-U79" secondAttribute="bottom" constant="38" id="CnX-Vn-FNo"/>
+                            <constraint firstItem="E4V-KL-luq" firstAttribute="top" secondItem="kPZ-WD-6kX" secondAttribute="bottom" constant="8" id="EfJ-X2-sOB"/>
                             <constraint firstItem="0Pj-8H-PLT" firstAttribute="leading" secondItem="sKf-ew-JhQ" secondAttribute="leading" constant="131" id="JJB-Gg-E1A"/>
                             <constraint firstAttribute="trailing" secondItem="su1-Ce-QAf" secondAttribute="trailing" constant="24" id="KFz-Uf-dxJ"/>
                             <constraint firstItem="su1-Ce-QAf" firstAttribute="leading" secondItem="sKf-ew-JhQ" secondAttribute="leading" constant="24" id="N1Q-K2-V8y"/>
@@ -295,14 +299,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="52" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="54A-6Z-iQ7">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="54A-6Z-iQ7">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HorarioTableViewCell" rowHeight="52" id="vNT-lU-NvK" customClass="HorarioTableViewCell" customModule="PeliculasCJ" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="52"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HorarioTableViewCell" rowHeight="60" id="vNT-lU-NvK" customClass="HorarioTableViewCell" customModule="PeliculasCJ" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="320" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vNT-lU-NvK" id="dHp-ne-Ja5">
-                                            <frame key="frameInset" width="320" height="51"/>
+                                            <frame key="frameInset" width="320" height="59"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHE-A1-IGk">
@@ -312,7 +316,7 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="sHE-A1-IGk" secondAttribute="bottom" id="BAU-Ux-Kfx"/>
+                                                <constraint firstAttribute="bottom" secondItem="sHE-A1-IGk" secondAttribute="bottom" constant="14" id="BAU-Ux-Kfx"/>
                                                 <constraint firstItem="sHE-A1-IGk" firstAttribute="leading" secondItem="dHp-ne-Ja5" secondAttribute="leading" constant="8" id="T9A-kc-kmQ"/>
                                                 <constraint firstItem="sHE-A1-IGk" firstAttribute="top" secondItem="dHp-ne-Ja5" secondAttribute="top" id="plT-jm-5EO"/>
                                                 <constraint firstAttribute="trailing" secondItem="sHE-A1-IGk" secondAttribute="trailing" constant="10" id="zOH-ij-xKo"/>
@@ -332,7 +336,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="54A-6Z-iQ7" secondAttribute="trailing" id="BDI-0T-QCB"/>
-                            <constraint firstItem="54A-6Z-iQ7" firstAttribute="top" secondItem="DW1-O9-i16" secondAttribute="bottom" id="FZr-uq-3Ex"/>
+                            <constraint firstItem="54A-6Z-iQ7" firstAttribute="top" secondItem="DW1-O9-i16" secondAttribute="bottom" constant="-44" id="FZr-uq-3Ex"/>
                             <constraint firstItem="wob-he-NQB" firstAttribute="top" secondItem="54A-6Z-iQ7" secondAttribute="bottom" id="dXv-IK-JfP"/>
                             <constraint firstItem="54A-6Z-iQ7" firstAttribute="leading" secondItem="696-Ng-qCO" secondAttribute="leading" id="yYP-c0-cWc"/>
                         </constraints>
@@ -368,4 +372,7 @@
         <image name="Image-1" width="128" height="128"/>
         <image name="cinefondo" width="225" height="300"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="yAN-PY-5CY"/>
+    </inferredMetricsTieBreakers>
 </document>
