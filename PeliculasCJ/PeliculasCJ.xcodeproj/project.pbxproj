@@ -39,6 +39,7 @@
 		83E7DE5A1DC7F8EA000DC701 /* CDMWebResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E7DE591DC7F8EA000DC701 /* CDMWebResponse.swift */; };
 		83E7DE5C1DC7F901000DC701 /* CDMWebSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E7DE5B1DC7F901000DC701 /* CDMWebSender.swift */; };
 		83E7DE5E1DC7F916000DC701 /* CDMWebTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E7DE5D1DC7F916000DC701 /* CDMWebTranslator.swift */; };
+		83F3578E1DECBF4400347F53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3578D1DECBF4400347F53 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		83E7DE591DC7F8EA000DC701 /* CDMWebResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMWebResponse.swift; sourceTree = "<group>"; };
 		83E7DE5B1DC7F901000DC701 /* CDMWebSender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMWebSender.swift; sourceTree = "<group>"; };
 		83E7DE5D1DC7F916000DC701 /* CDMWebTranslator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMWebTranslator.swift; sourceTree = "<group>"; };
+		83F3578D1DECBF4400347F53 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 				83CD615F1DD4DFC900AC0ACF /* DetallePeliculaViewController.swift */,
 				83C249C81DE739E800AE1BA4 /* HorarioTableViewCell.swift */,
 				83C249ED1DE74EBA00AE1BA4 /* HorariosViewController.swift */,
+				83F3578D1DECBF4400347F53 /* ViewController.swift */,
 			);
 			path = Peliculas;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83F3578E1DECBF4400347F53 /* ViewController.swift in Sources */,
 				83E7DE2D1DC7E02E000DC701 /* HorariosDALC.swift in Sources */,
 				83922DAB1DC22AA7001026BA /* PeliculasCJ.xcdatamodeld in Sources */,
 				83E7DE3A1DC7E0F9000DC701 /* Sucursal+CoreDataClass.swift in Sources */,
