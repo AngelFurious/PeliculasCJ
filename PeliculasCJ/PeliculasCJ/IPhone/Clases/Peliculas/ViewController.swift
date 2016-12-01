@@ -10,17 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    
-    @IBOutlet weak var lblCineTitle: UILabel!
+    @IBOutlet weak var imgApple: UIImageView!
+    @IBOutlet weak var lblTitulo: UILabel!
+
     
     override func viewDidLoad() {
         
         UIView.animate(withDuration: 2) {
             
             self.view.layoutIfNeeded()
-            self.lblCineTitle.transform = CGAffineTransform(scaleX: 1.5, y: 1.0)
-            self.lblCineTitle.transform = self.lblCineTitle.transform.concatenating(CGAffineTransform(translationX: 0, y: -150))
-            self.lblCineTitle.backgroundColor = UIColor.lightGray
+            self.imgApple.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+            self.imgApple.transform = self.imgApple.transform.concatenating(CGAffineTransform(translationX: 0, y: 150))
         }
         
         super.viewDidLoad()

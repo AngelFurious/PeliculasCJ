@@ -91,7 +91,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="cinefondo" translatesAutoresizingMaskIntoConstraints="NO" id="W3n-zs-KPo"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="ScJ-Ot-d4s">
+                                <frame key="frameInset" minX="-8" minY="64" width="336" height="504"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVq-cq-KJp">
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.80191271551724141" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -108,37 +111,35 @@
                                     </segue>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CINE ALL STARS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNc-Ca-xzo">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="72" id="u8J-5n-VSP"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name=".SFNSDisplay-Regular" family=".SF NS Display" pointSize="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CINE ALL STARS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HiN-aj-z9X">
+                                <frame key="frameInset" minX="63" minY="296" width="195" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Image-2" translatesAutoresizingMaskIntoConstraints="NO" id="nfL-8t-NHe">
+                                <frame key="frameInset" minX="96" minY="-57" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="bVq-cq-KJp" firstAttribute="leading" secondItem="DH4-TA-Rvm" secondAttribute="leading" constant="79" id="Fm2-ys-DvL"/>
-                            <constraint firstItem="CNc-Ca-xzo" firstAttribute="leading" secondItem="DH4-TA-Rvm" secondAttribute="leading" constant="44" id="Hzl-uF-jcr"/>
-                            <constraint firstAttribute="trailing" secondItem="CNc-Ca-xzo" secondAttribute="trailing" constant="45" id="Kyw-sk-rTy"/>
-                            <constraint firstItem="tJY-n8-j8G" firstAttribute="top" secondItem="W3n-zs-KPo" secondAttribute="bottom" id="NU8-gb-Vl5"/>
                             <constraint firstItem="tJY-n8-j8G" firstAttribute="top" secondItem="bVq-cq-KJp" secondAttribute="bottom" constant="20" id="SLy-Fr-Ybr"/>
-                            <constraint firstAttribute="trailing" secondItem="W3n-zs-KPo" secondAttribute="trailing" id="YFU-7c-kHe"/>
-                            <constraint firstItem="W3n-zs-KPo" firstAttribute="top" secondItem="DH4-TA-Rvm" secondAttribute="top" constant="48" id="tCc-T9-U6Z"/>
-                            <constraint firstItem="W3n-zs-KPo" firstAttribute="leading" secondItem="DH4-TA-Rvm" secondAttribute="leading" id="uuF-T1-z7p"/>
-                            <constraint firstItem="CNc-Ca-xzo" firstAttribute="top" secondItem="AFG-9m-mBv" secondAttribute="bottom" constant="191" id="vmq-dJ-O7q"/>
                             <constraint firstAttribute="trailing" secondItem="bVq-cq-KJp" secondAttribute="trailing" constant="79" id="x5o-7i-b9t"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="QG6-4Y-NQI"/>
                     <connections>
-                        <outlet property="lblCineTitle" destination="CNc-Ca-xzo" id="zzz-qe-Tf9"/>
+                        <outlet property="imgApple" destination="nfL-8t-NHe" id="yaG-xB-beE"/>
+                        <outlet property="lblTitulo" destination="HiN-aj-z9X" id="9xo-jF-rqK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RSO-a4-CJY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3200.625" y="3.1690140845070425"/>
+            <point key="canvasLocation" x="3236" y="3"/>
         </scene>
         <!--Peliculas Collection View Controller-->
         <scene sceneID="33T-yY-UUY">
@@ -246,26 +247,26 @@
                                     <segue destination="pjR-T7-5Rq" kind="show" identifier="HorariosViewController" id="vI0-jQ-CWQ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPZ-WD-6kX">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="lUz-Jr-5vy"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="detalle" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="su1-Ce-QAf">
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="13"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPZ-WD-6kX">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="lUz-Jr-5vy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="su1-Ce-QAf" firstAttribute="top" secondItem="0Pj-8H-PLT" secondAttribute="bottom" constant="8" id="8Q7-xl-xRc"/>
-                            <constraint firstItem="kPZ-WD-6kX" firstAttribute="leading" secondItem="sKf-ew-JhQ" secondAttribute="leadingMargin" constant="36" id="A9k-Kx-wlG"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="kPZ-WD-6kX" secondAttribute="trailing" constant="36" id="C7g-VX-e2g"/>
-                            <constraint firstItem="kPZ-WD-6kX" firstAttribute="top" secondItem="g4r-rU-U79" secondAttribute="bottom" constant="38" id="CnX-Vn-FNo"/>
+                            <constraint firstItem="kPZ-WD-6kX" firstAttribute="leading" secondItem="sKf-ew-JhQ" secondAttribute="leadingMargin" constant="22" id="A9k-Kx-wlG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kPZ-WD-6kX" secondAttribute="trailing" constant="22" id="C7g-VX-e2g"/>
+                            <constraint firstItem="kPZ-WD-6kX" firstAttribute="top" secondItem="g4r-rU-U79" secondAttribute="bottom" constant="16" id="CnX-Vn-FNo"/>
                             <constraint firstItem="E4V-KL-luq" firstAttribute="top" secondItem="kPZ-WD-6kX" secondAttribute="bottom" constant="8" id="EfJ-X2-sOB"/>
                             <constraint firstItem="0Pj-8H-PLT" firstAttribute="leading" secondItem="sKf-ew-JhQ" secondAttribute="leading" constant="131" id="JJB-Gg-E1A"/>
                             <constraint firstAttribute="trailing" secondItem="su1-Ce-QAf" secondAttribute="trailing" constant="24" id="KFz-Uf-dxJ"/>
@@ -369,8 +370,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Image" width="200" height="300"/>
         <image name="Image-1" width="128" height="128"/>
-        <image name="cinefondo" width="225" height="300"/>
+        <image name="Image-2" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="yAN-PY-5CY"/>

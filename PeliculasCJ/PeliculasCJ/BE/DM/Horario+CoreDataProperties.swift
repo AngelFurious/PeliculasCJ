@@ -20,3 +20,4 @@ extension Horario {
     @NSManaged public var sucursal: Sucursal?
 
 }
+ 
