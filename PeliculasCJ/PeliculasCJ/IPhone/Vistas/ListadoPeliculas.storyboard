@@ -214,10 +214,19 @@
                     <navigationItem key="navigationItem" id="6c9-4x-TVe"/>
                     <connections>
                         <outlet property="TablaPeliculasCollectionView" destination="jwm-xn-p6Z" id="DlX-ST-6fJ"/>
+                        <outlet property="searchDisplayController" destination="eLQ-i1-A4m" id="yM7-57-Vzk"/>
                         <segue destination="ex3-dD-sw9" kind="show" identifier="DetallePeliculaViewController" id="25U-1h-bp5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nnF-W7-L5j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="eLQ-i1-A4m">
+                    <connections>
+                        <outlet property="delegate" destination="cLm-QD-gFg" id="Td7-NX-aNU"/>
+                        <outlet property="searchContentsController" destination="cLm-QD-gFg" id="MZC-Cn-ZLN"/>
+                        <outlet property="searchResultsDataSource" destination="cLm-QD-gFg" id="g3Z-eI-Mfp"/>
+                        <outlet property="searchResultsDelegate" destination="cLm-QD-gFg" id="IaJ-NH-AwE"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="4020" y="3.1690140845070425"/>
         </scene>
@@ -320,10 +329,10 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="sHE-A1-IGk" secondAttribute="bottom" constant="14" id="BAU-Ux-Kfx"/>
-                                                <constraint firstItem="sHE-A1-IGk" firstAttribute="leading" secondItem="dHp-ne-Ja5" secondAttribute="leading" constant="8" id="T9A-kc-kmQ"/>
-                                                <constraint firstItem="sHE-A1-IGk" firstAttribute="top" secondItem="dHp-ne-Ja5" secondAttribute="top" id="plT-jm-5EO"/>
-                                                <constraint firstAttribute="trailing" secondItem="sHE-A1-IGk" secondAttribute="trailing" constant="10" id="zOH-ij-xKo"/>
+                                                <constraint firstAttribute="bottom" secondItem="sHE-A1-IGk" secondAttribute="bottom" constant="8" id="BAU-Ux-Kfx"/>
+                                                <constraint firstItem="sHE-A1-IGk" firstAttribute="leading" secondItem="dHp-ne-Ja5" secondAttribute="leading" constant="14" id="T9A-kc-kmQ"/>
+                                                <constraint firstItem="sHE-A1-IGk" firstAttribute="top" secondItem="dHp-ne-Ja5" secondAttribute="top" constant="6" id="plT-jm-5EO"/>
+                                                <constraint firstAttribute="trailing" secondItem="sHE-A1-IGk" secondAttribute="trailing" constant="8" id="zOH-ij-xKo"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -369,7 +378,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yfk-ze-Aqd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2203.125" y="3.1690140845070425"/>
+            <point key="canvasLocation" x="2499" y="2"/>
         </scene>
     </scenes>
     <resources>
