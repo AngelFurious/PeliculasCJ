@@ -238,15 +238,6 @@
                                     <constraint firstAttribute="height" constant="169" id="yAK-5z-OoX"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Pj-8H-PLT">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="59" id="C4C-Re-weD"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="Image-1"/>
-                                <connections>
-                                    <segue destination="pjR-T7-5Rq" kind="show" identifier="HorariosViewController" id="vI0-jQ-CWQ"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="detalle" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="su1-Ce-QAf">
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="13"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
@@ -260,22 +251,34 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ct-Uz-iJ9">
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="kth-R3-PMC"/>
+                                </constraints>
+                                <state key="normal" title="Horarios">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="pjR-T7-5Rq" kind="show" id="yPE-iZ-Hai"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="su1-Ce-QAf" firstAttribute="top" secondItem="0Pj-8H-PLT" secondAttribute="bottom" constant="8" id="8Q7-xl-xRc"/>
+                            <constraint firstItem="su1-Ce-QAf" firstAttribute="top" secondItem="7Ct-Uz-iJ9" secondAttribute="bottom" constant="17" id="2Ns-dh-XiX"/>
                             <constraint firstItem="kPZ-WD-6kX" firstAttribute="leading" secondItem="sKf-ew-JhQ" secondAttribute="leadingMargin" constant="22" id="A9k-Kx-wlG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="kPZ-WD-6kX" secondAttribute="trailing" constant="22" id="C7g-VX-e2g"/>
                             <constraint firstItem="kPZ-WD-6kX" firstAttribute="top" secondItem="g4r-rU-U79" secondAttribute="bottom" constant="16" id="CnX-Vn-FNo"/>
                             <constraint firstItem="E4V-KL-luq" firstAttribute="top" secondItem="kPZ-WD-6kX" secondAttribute="bottom" constant="8" id="EfJ-X2-sOB"/>
-                            <constraint firstItem="0Pj-8H-PLT" firstAttribute="leading" secondItem="sKf-ew-JhQ" secondAttribute="leading" constant="131" id="JJB-Gg-E1A"/>
-                            <constraint firstAttribute="trailing" secondItem="su1-Ce-QAf" secondAttribute="trailing" constant="24" id="KFz-Uf-dxJ"/>
-                            <constraint firstItem="su1-Ce-QAf" firstAttribute="leading" secondItem="sKf-ew-JhQ" secondAttribute="leading" constant="24" id="N1Q-K2-V8y"/>
+                            <constraint firstItem="7Ct-Uz-iJ9" firstAttribute="top" secondItem="E4V-KL-luq" secondAttribute="bottom" constant="8" id="LwB-Af-dc1"/>
                             <constraint firstItem="E4V-KL-luq" firstAttribute="leading" secondItem="sKf-ew-JhQ" secondAttribute="leading" constant="68" id="RPZ-7R-75m"/>
-                            <constraint firstAttribute="trailing" secondItem="0Pj-8H-PLT" secondAttribute="trailing" constant="130" id="e68-GS-f7y"/>
-                            <constraint firstItem="0Pj-8H-PLT" firstAttribute="top" secondItem="E4V-KL-luq" secondAttribute="bottom" constant="8" id="mGF-0l-Xvi"/>
+                            <constraint firstAttribute="trailing" secondItem="7Ct-Uz-iJ9" secondAttribute="trailing" constant="95" id="UQU-ai-tVV"/>
+                            <constraint firstAttribute="trailing" secondItem="su1-Ce-QAf" secondAttribute="trailing" constant="24" id="c8l-Fz-h6w"/>
+                            <constraint firstItem="7Ct-Uz-iJ9" firstAttribute="leading" secondItem="sKf-ew-JhQ" secondAttribute="leading" constant="96" id="dVJ-om-JUQ"/>
+                            <constraint firstItem="su1-Ce-QAf" firstAttribute="leading" secondItem="sKf-ew-JhQ" secondAttribute="leading" constant="24" id="g8t-5v-tCq"/>
                             <constraint firstAttribute="trailing" secondItem="E4V-KL-luq" secondAttribute="trailing" constant="68" id="oby-zf-bON"/>
-                            <constraint firstItem="d7P-E9-Hwq" firstAttribute="top" secondItem="su1-Ce-QAf" secondAttribute="bottom" constant="20" id="pr4-TL-BY8"/>
+                            <constraint firstItem="d7P-E9-Hwq" firstAttribute="top" secondItem="su1-Ce-QAf" secondAttribute="bottom" constant="20" id="p6y-by-v1z"/>
                         </constraints>
                     </view>
                     <connections>
@@ -371,7 +374,6 @@
     </scenes>
     <resources>
         <image name="Image" width="200" height="300"/>
-        <image name="Image-1" width="128" height="128"/>
         <image name="Image-2" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
